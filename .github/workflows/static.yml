@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CyberJerus - Suggestions et préoccupations</title>
+    <style>
+      body {
+        background-image: url('dastone2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: 0;
+        padding: 0;
+      }
+      
+      #logo {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 100px;
+        height: auto;
+        z-index: 1;
+      }
+      
+      #suggestion-form {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        z-index: 1;
+      }
+      
+      #suggestion-form label,
+      #suggestion-form input,
+      #suggestion-form textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      
+      #suggestion-form input[type="submit"] {
+        background-color: #FDB813;
+        border: none;
+        color: #FFFFFF;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  
+  <body>
+
+    <img id="logo" src="dastone3.jpg" alt="Logo CyberJerus">
+
+<img id="instagram" src="insta.jpg" alt="Instagram Logo">
+	<img id="facebook" src="fb.jpg" alt="Facebook Logo">
+	<img id="whatsapp" src="wha.jpg" alt="WhatsApp Logo">
+    
+    <form id="suggestion-form" method="POST" action="mailto:cyberjerusnet@gmail.com">
+      <label for="name">Nom :</label>
+      <input type="text" id="name" name="name">
+      
+      <label for="email">E-mail :</label>
+      <input type="email" id="email" name="email">
+      
+      <label for="suggestion">Suggestion ou préoccupation :</label>
+      <textarea id="suggestion" name="suggestion"></textarea>
+      
+      <input type="submit" value="Envoyer">
+    </form>
+  </body>
+</html>
